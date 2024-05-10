@@ -1,0 +1,141 @@
+<div class="divcha">
+    <a href="home" class="glavni">Главная</a>
+    <span class="strelka">></span>
+    <a href="contacts" class="contacti">Контакты</a>
+</div>
+<h1 class="text-nov">Новости</h1>
+<div class="card-wrapper">
+    <div class="card">
+        <img src="./../../../../assets/images/Mask group (1).png" alt="mask group">
+    
+        <div class="info">
+            <h3>Смена домена</h3>
+    
+            <div class="flex-wrap">
+                <small>Nimadir</small>
+    
+                <small>
+                    Nimadir
+                </small>
+            </div>
+    
+            <p>Новый адрес ru-massa.info</p>
+    
+            <div class="flex-wrap-2">
+                <small>Nimadir 2</small>
+    
+                <small>
+                    Nimadir 2
+                </small>
+            </div>
+    
+            <button>Читать</button>
+        </div>
+    </div>
+
+    @for (novost of novosti; track novost.id) {
+
+        <div class="card">
+            <img src="./../../../../assets/images/Mask group (1).png" alt="mask group">
+        
+            <div class="info">
+                <h3>{{novost.title}}</h3>
+                <div class="flex-wrap">
+                    <small class="small-1"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_154_8353)">
+                        <path d="M9.68318 0.925363H9.23558V0.472448C9.23558 0.213672 9.02582 0.00390625 8.76704 0.00390625C8.50826 0.00390625 8.2985 0.213672 8.2985 0.472448V0.925363H3.70148V0.472448C3.70148 0.213672 3.49171 0.00390625 3.23293 0.00390625C2.97416 0.00390625 2.76439 0.213672 2.76439 0.472448V0.925363H2.31682C1.03932 0.925363 0 1.96468 0 3.24216V9.68174C0 10.9592 1.03932 11.9986 2.31682 11.9986H9.6832C10.9607 11.9986 12 10.9592 12 9.68174V3.24216C12 1.96468 10.9607 0.925363 9.68318 0.925363ZM2.31682 1.86245H2.76439V2.7761C2.76439 3.03488 2.97416 3.24464 3.23293 3.24464C3.49171 3.24464 3.70148 3.03488 3.70148 2.7761V1.86245H8.29852V2.7761C8.29852 3.03488 8.50829 3.24464 8.76706 3.24464C9.02584 3.24464 9.23561 3.03488 9.23561 2.7761V1.86245H9.6832C10.444 1.86245 11.0629 2.48139 11.0629 3.24216V3.68976H0.937083V3.24216C0.937083 2.48139 1.55603 1.86245 2.31682 1.86245ZM9.68318 11.0615H2.31682C1.55603 11.0615 0.937083 10.4425 0.937083 9.68174V4.62684H11.0629V9.68174C11.0629 10.4425 10.444 11.0615 9.68318 11.0615ZM4.16222 6.46978C4.16222 6.72855 3.95245 6.93832 3.69368 6.93832H2.77222C2.51344 6.93832 2.30368 6.72855 2.30368 6.46978C2.30368 6.211 2.51344 6.00124 2.77222 6.00124H3.69368C3.95243 6.00124 4.16222 6.211 4.16222 6.46978ZM9.69635 6.46978C9.69635 6.72855 9.48658 6.93832 9.2278 6.93832H8.30635C8.04757 6.93832 7.83781 6.72855 7.83781 6.46978C7.83781 6.211 8.04757 6.00124 8.30635 6.00124H9.2278C9.48656 6.00124 9.69635 6.211 9.69635 6.46978ZM6.92661 6.46978C6.92661 6.72855 6.71684 6.93832 6.45807 6.93832H5.53661C5.27784 6.93832 5.06807 6.72855 5.06807 6.46978C5.06807 6.211 5.27784 6.00124 5.53661 6.00124H6.45807C6.71682 6.00124 6.92661 6.211 6.92661 6.46978ZM4.16222 9.23417C4.16222 9.49295 3.95245 9.70271 3.69368 9.70271H2.77222C2.51344 9.70271 2.30368 9.49295 2.30368 9.23417C2.30368 8.97539 2.51344 8.76563 2.77222 8.76563H3.69368C3.95243 8.76563 4.16222 8.97539 4.16222 9.23417ZM9.69635 9.23417C9.69635 9.49295 9.48658 9.70271 9.2278 9.70271H8.30635C8.04757 9.70271 7.83781 9.49295 7.83781 9.23417C7.83781 8.97539 8.04757 8.76563 8.30635 8.76563H9.2278C9.48656 8.76563 9.69635 8.97539 9.69635 9.23417ZM6.92661 9.23417C6.92661 9.49295 6.71684 9.70271 6.45807 9.70271H5.53661C5.27784 9.70271 5.06807 9.49295 5.06807 9.23417C5.06807 8.97539 5.27784 8.76563 5.53661 8.76563H6.45807C6.71682 8.76563 6.92661 8.97539 6.92661 9.23417Z" fill="#474747"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_154_8353">
+                        <rect width="12" height="12" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        {{novost.date}}
+                        </small>
+        
+                    <small class="small-2">
+                        Автор:
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <circle cx="10.5" cy="10.5" r="10.5" fill="#D9D9D9"/>
+                            <mask id="mask0_154_8381" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="21">
+                            <circle cx="10.5" cy="10.5" r="10.5" fill="#D9D9D9"/>
+                            </mask>
+                            <g mask="url(#mask0_154_8381)">
+                            <rect x="-1" width="23" height="23" fill="url(#pattern0_154_8381)"/>
+                            </g>
+                            <defs>
+                            <pattern id="pattern0_154_8381" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_154_8381" transform="scale(0.00666667)"/>
+                            </pattern>
+                            <image id="image0_154_8381" width="150" height="150" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAIAAACzY+a1AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB1klEQVR4nO3csWpCQRBA0Ris/bekC9jky2ys/cY0KSzdwLzshXNqkX1cphp2T18fl7cZn7fr6z9+fN+HjjFnkw98H/pfDiNhnoR5EuZJmCdhnoR5EuZJmCdhnoR5EuZJmCdh3mlp2bS0XuHPljZTpjBPwjwJ8yTMkzBPwjwJ8yTMkzBPwjwJ8yTMkzBPwry1ZdMm5nZexQtWpjBPwjwJ8yTMkzBPwjwJ8yTMkzBPwjwJ8yTMkzBPwrzzfx/g1yZP0m1yjCWmME/CPAnzJMyTME/CPAnzJMyTME/CPAnzJMyTME/CvF2WTUu85vfMFOZJmCdhnoR5EuZJmCdhnoR5EuZJmCdhnoR5EuZJmDf4jF7xsbvimU1hnoR5EuZJmCdhnoR5EuZJmCdhnoR5EuZJmCdhnoR5a8smV4qOsbSZMoV5EuZJmCdhnoR5EuZJmCdhnoR5EuZJmCdhnoR5EuYNPqPn/tGzuTObwjwJ8yTMkzBPwjwJ8yTMkzBPwjwJ8yTMkzBPwjwJ83Z5Rm9uyzNnkw80hXkS5kmYJ2GehHkS5kmYJ2GehHkS5kmYJ2GehHkS5g0umziGKcyTME/CPAnzJMyTME/CPAnzJMyTME/CPAnzJMyTMO8HM1ougRI8llEAAAAASUVORK5CYII="/>
+                            </defs>
+                            </svg>
+                            Гена
+                    </small>
+                </div>
+        
+                <p>Новый адрес ru-massa.info</p>
+        
+                <div class="flex-wrap-2">
+                    <small><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_154_8367)">
+                        <path d="M11.8125 9.5625H6.1875C5.877 9.5625 5.625 9.8145 5.625 10.125C5.625 10.4355 5.877 10.6875 6.1875 10.6875H11.8125C12.123 10.6875 12.375 10.4355 12.375 10.125C12.375 9.8145 12.123 9.5625 11.8125 9.5625ZM12.9375 6.1875H5.0625C4.752 6.1875 4.5 6.4395 4.5 6.75C4.5 7.0605 4.752 7.3125 5.0625 7.3125H12.9375C13.248 7.3125 13.5 7.0605 13.5 6.75C13.5 6.4395 13.248 6.1875 12.9375 6.1875ZM9 0C4.02976 0 0 3.52574 0 7.875C0 10.3607 1.31906 12.5736 3.375 14.0169V18L7.31756 15.6077C7.86321 15.6977 8.42456 15.75 9 15.75C13.9708 15.75 18 12.2243 18 7.875C18 3.52574 13.9708 0 9 0ZM9 14.625C8.343 14.625 7.7085 14.5485 7.09874 14.4186L4.45047 16.0104L4.48591 13.4016C2.45588 12.1804 1.125 10.1621 1.125 7.875C1.125 4.14732 4.65074 1.125 9 1.125C13.3493 1.125 16.875 4.14732 16.875 7.875C16.875 11.6027 13.3493 14.625 9 14.625Z" fill="#474747"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_154_8367">
+                        <rect width="18" height="18" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+                        
+                        </small>
+        
+                    <small>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_154_8363)">
+                            <path d="M12.6875 10.375C11.7612 10.375 10.945 10.8307 10.4323 11.5236L5.99969 9.25387C6.07328 9.00303 6.125 8.74306 6.125 8.46875C6.125 8.09669 6.04872 7.74297 5.91694 7.41762L10.5558 4.62612C11.0721 5.232 11.8309 5.625 12.6875 5.625C14.2384 5.625 15.5 4.36341 15.5 2.8125C15.5 1.26159 14.2384 0 12.6875 0C11.1366 0 9.875 1.26159 9.875 2.8125C9.875 3.16991 9.94859 3.50894 10.0707 3.82369L5.41797 6.62337C4.90216 6.0355 4.15428 5.65625 3.3125 5.65625C1.76159 5.65625 0.5 6.91784 0.5 8.46875C0.5 10.0197 1.76159 11.2812 3.3125 11.2812C4.25406 11.2812 5.08409 10.8122 5.59484 10.0998L10.0128 12.3622C9.93147 12.6248 9.875 12.8984 9.875 13.1875C9.875 14.7384 11.1366 16 12.6875 16C14.2384 16 15.5 14.7384 15.5 13.1875C15.5 11.6366 14.2384 10.375 12.6875 10.375Z" fill="#BB9B75"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_154_8363">
+                            <rect width="16" height="16" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>                        
+                    </small>
+                </div>
+        
+                <button>Читать</button>
+            </div>
+        </div>
+    }
+
+    <div class="card">
+        <img src="./../../../../assets/images/Mask group (1).png" alt="mask group">
+    
+        <div class="info">
+            <h3>Смена домена</h3>
+    
+            <div class="flex-wrap">
+                <small>Nimadir</small>
+    
+                <small>
+                    Nimadir
+                </small>
+            </div>
+    
+            <p>Новый адрес ru-massa.info</p>
+    
+            <div class="flex-wrap-2">
+                <small>Nimadir 2</small>
+    
+                <small>
+                    Nimadir 2
+                </small>
+            </div>
+    
+            <button>Читать</button>
+        </div>
+    </div>
+</div>

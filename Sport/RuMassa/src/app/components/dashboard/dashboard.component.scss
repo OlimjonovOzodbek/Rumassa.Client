@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --c-gray-900: #000000;
+  --c-gray-800: #1f1f1f;
+  --c-gray-700: #2e2e2e;
+  --c-gray-600: #313131;
+  --c-gray-500: #969593;
+  --c-gray-400: #a6a6a6;
+  --c-gray-300: #bdbbb7;
+  --c-gray-200: #f1f1f1;
+  --c-gray-100: #ffffff;
+
+  --c-green-500: #45ffbc;
+  --c-olive-500: #e3ffa8;
+
+  --c-white: var(--c-gray-100);
+
+  --c-text-primary: var(--c-gray-100);
+  --c-text-secondary: var(--c-gray-200);
+  --c-text-tertiary: var(--c-gray-500);
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  font-family: "Be Vietnam Pro", sans-serif;
+  background-color: var(--c-gray-900);
+  color: var(--c-text-primary);
+  display: flex;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  justify-content: center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+select,
+input,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+.responsive-wrapper {
+  width: 90%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app {
+  min-height: 80vh;
+  width: 95%;
+  max-width: 1600px;
+  background-color: var(--c-gray-800);
+  padding: 2vw 4vw 6vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  display: grid;
+  grid-template-columns: minmax(min-content, 175px) minmax(max-content, 1fr) minmax(
+      max-content,
+      400px
+    );
+  column-gap: 4rem;
+  align-items: flex-end;
+  @media (max-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--c-gray-600);
+  }
+}
+
+.app-header-navigation {
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.app-header-actions {
+  display: flex;
+  align-items: center;
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.app-header-actions-buttons {
+  display: flex;
+  border-left: 1px solid var(--c-gray-600);
+  margin-left: 2rem;
+  padding-left: 2rem;
+
+  & > * + * {
+    margin-left: 1rem;
+  }
+}
+
+.app-header-mobile {
+  display: none;
+  @media (max-width: 1200px) {
+    display: flex;
+  }
+}
+
+.tabs {
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.tabs a {
+    margin-right: 20px;
+}

@@ -1,0 +1,43 @@
+<div class="login-wrapper">
+    <div class="content-logo">
+        <img src="../../../assets/images/Logo.svg" alt="">
+        <h3>Интернет-магазин <br> RU-massa</h3>
+    </div>
+    <div class="enter-title">Вход</div>
+    <div class="form__check-title">
+        <p>Нет аккаунта?</p>
+        <a routerLink="/register">Зарегистрируйтесь</a>
+    </div>
+    <form [formGroup]="form" (ngSubmit)="login()">
+        <div class="register-form">
+            <label class="input-label" for="email">
+                Email
+                <input id="email" placeholder="Введите e-mail" formControlName="email" type="email">
+            </label>
+            <label class="input-label" for="email">
+                Пароль
+                <input id="password" placeholder="Введите ваш пароль" formControlName="password" type="password">
+            </label>
+        </div>
+        
+        <div class="form__action-link">
+            <a href="/assa">Запомнить меня</a>
+            <a href="/sasa">Забыли пароль?</a>
+        </div>
+        <div class="register-btn">
+            <button type="submit" class="form-btn">Войти</button>
+        </div>
+    </form>
+
+    <div class="form-social">
+        <p class="social-title">Вход в один клик:</p>
+        <div class="social-icons">
+            <a href="">
+                <img src="../../../assets/images/facebook.svg" alt="">
+            </a>
+            <a href="">
+                <img src="../../../assets/images/google.svg" alt="">
+            </a>
+        </div>
+    </div>
+</div>

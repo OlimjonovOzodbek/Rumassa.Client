@@ -1,0 +1,41 @@
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+
+    .card{
+        width: 274px;
+    
+        img{
+            height: 250px;
+        }
+    
+    
+        .info{
+            height: 250px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            justify-content: space-between;
+    
+            .flex-wrap, .flex-wrap-2{
+                display: flex;
+                gap: 30px;
+                align-items: center;
+            }
+    
+            
+        }
+    }
+}
+
+.divcha{
+    display: flex;
+    gap: 10px;
+}
+
+.text-nov{
+    display: flex;
+}

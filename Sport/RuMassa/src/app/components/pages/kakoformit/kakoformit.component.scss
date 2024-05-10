@@ -1,0 +1,125 @@
+.main{
+    height: 500px;
+ 
+
+}
+h1{
+    padding-top: 50px;
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #1C1C1C;
+    margin-left: 50px;
+}
+.grayBox{
+    height: 236px;
+    width: 1320px;
+    background-color: #F8F8F8;
+    margin-left: 50px;
+    margin-top: 50px;
+    padding-top: 40px;
+}
+.boxing{
+width: 290px;
+height: 110px;
+margin-top: 20px;
+margin-left: 20px;
+}
+.boxing p{
+    margin-left: 40px;
+    margin-top: -30px;
+    }
+.table{
+    display: flex;
+    border: 1px solid #D8D8D8;
+    width: 1250px;
+    height: 156px;
+    margin-left: 35px;
+
+
+}
+.line{
+    width: 1px;
+    height: 116px;
+    margin-top: 20px;
+    background-color: #D8D8D8;
+}
+.s1{
+    margin-left: 255px;
+    margin-top: 18px;
+}
+.s2{
+    margin-left: 255px;
+    margin-top: 18px;
+}
+.s3{
+    margin-left: 255px;
+    margin-top: -3px;
+}
+.just{
+    display: flex;
+    width: 1320px;
+    height: 53px;
+    background-color: #E2EFDA;
+    margin-left: 58px;
+    margin-top: 20px;
+    border-left: 4px solid #D0E5C1;
+}
+.just img{
+    width: 13px;
+    height: 13px;
+    margin-top: 22px;
+    margin-left: 505px;
+    cursor: pointer;
+}
+.just p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    margin-top: 19px;
+    margin-left: 10px;
+    color: #4C7543;
+    
+}
+span{
+font-size: 16px;
+font-weight: 800;
+line-height: 20px;
+text-align: left;
+
+}
+.cs{
+    display: none;
+}
+.rec{
+    display: flex;
+    z-index:  -1;
+    margin-left: 1141px;
+    transform: translateY(-150px);
+    position: absolute;
+    
+}
+.rec2{
+    display: flex;
+    z-index:  -1;
+    margin-left: 1195px;
+    transform: translateY(-200px);
+    position: absolute;
+    
+}
+.r1{
+    display: flex;
+    z-index:  -1;
+    margin-left: -41px;
+    transform: translateY(150px);
+    position: absolute;
+}
+.r2{
+    display: flex;
+    z-index:  -1;
+    margin-left: -95px;
+    transform: translateY(200px);
+    position: absolute;
+}

@@ -1,0 +1,33 @@
+.container{
+    width: 95%;
+    height: auto;
+    margin:60px 30px;
+    background-color: #DEDEDE;
+    padding:30px;
+}
+.container h1{
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 75px;
+}
+.text{
+    font-size: 18px;
+    font-weight:400 ;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+.card_with_arrow{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1px;
+}
+
+.arrow img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.container hr{
+    margin-top: 20px;
+}
+

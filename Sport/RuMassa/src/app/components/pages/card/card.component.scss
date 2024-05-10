@@ -1,0 +1,73 @@
+.main{
+width: 330px;
+height: 601px;
+margin-left: 30px;
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+button{
+width: 282px;
+height: 52px;
+margin-left: 20px;
+
+}
+.btn1{
+    background-color: #BB9B75;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+.btn2{
+    background:none;
+    color: #303030;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #BB9B75;
+    margin-top: 15px;
+    border-radius: 4px;
+
+}
+.methan{
+font-size: 20px;
+font-weight: 700;
+line-height: 30px;
+text-align: left;
+margin-top: 18px;
+color: rgba(0, 0, 0, 1);
+margin-left: 20px;
+}
+.oral{
+font-size: 14px;
+font-weight: 400;
+line-height: 23px;
+text-align: left;
+color: #474747;
+margin-left: 20px;
+
+}
+.price{
+font-size: 22px;
+font-weight: 700;
+line-height: 24px;
+text-align: left;
+color: #2F2F2F;
+margin-left: 20px;
+
+}
+.ss{
+    display: flex;
+    
+    z-index: 9;
+}
+.sc{
+    display: flex;
+
+    z-index: 9;
+}

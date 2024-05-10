@@ -1,0 +1,103 @@
+.mainOplata{
+    height: 500px;
+    
+}
+.main_top{
+    display: flex;
+    padding-top: 50px;
+    margin-left: 70px;
+}
+.po{
+    color: #1C1C1C;
+    font-size:70px;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: left;
+    
+
+}
+.poc{
+color: #474747;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
+margin-left: 80px;
+border-left: 2.5px solid #E6E6E6;
+height: 55px;
+padding-left: 20px;
+
+}
+.noti{
+    display: flex;
+    background-color: #DDECF6;
+    border-left: 4px solid #C4DEEF;
+    width: 1340px;
+    height: 80px;
+    padding-left: 15px;
+    margin-left: 20px;
+    margin-top: 15px;
+    
+
+}
+.closer{
+    margin-left: 515px;
+    width: 13px;
+    margin-top: -25px;
+    cursor: pointer;
+}
+.tolko{
+font-size: 16px;
+font-weight: 800;
+line-height: 20px;
+text-align: left;
+margin-top: 15px;
+color: #446F8C;
+
+}
+.vi{
+font-size: 15px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+color: #446F8C;
+
+
+}
+.main-bottom{
+    background-color: #F8F8F8;
+    height: 267px;
+    width: 1380px;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+.main-bottom h2{
+font-size: 20px;
+font-weight: 800;
+line-height: 20px;
+text-align: left;
+padding-top: 20px;
+margin-left: 20px;
+}
+.oplati{
+    display: flex;
+    gap: 50px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+hr{
+    width: 1340px;
+    margin-left: 20px;
+    margin-top: 25px;
+    background-color: #EEEEEE;
+}
+li img{
+    margin-right: 10px;
+}
+.esli{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.cs{
+    display: none;
+}

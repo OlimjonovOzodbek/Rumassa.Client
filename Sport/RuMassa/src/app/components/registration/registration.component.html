@@ -1,0 +1,61 @@
+<div class="register-wrapper">
+    <div class="content-logo">
+        <img src="../../../assets/images/Logo.svg" alt="">
+        <h3>Интернет-магазин <br> RU-massa</h3>
+    </div>
+    <div class="enter-title">Регистрация</div>
+    <div class="form__check-title">
+        <p>Уже есть аккаунт?</p>
+        <a routerLink="/login">Войдите</a>
+    </div>
+    <form [formGroup]="form" (ngSubmit)="register()">
+        <div class="register-form">
+            <label class="input-label" for="email">
+                Ваша почта
+                <input id="email" formControlName="email" placeholder="Введите e-mail" type="email">
+            </label>
+            <label class="input-label" for="password">
+                Пароль
+                <input id="password" formControlName="password" placeholder="Введите ваш пароль" type="password">
+            </label>
+        </div>
+
+        <div class="register-form">
+            <label class="input-label" for="confirmPassword">
+                Повторите пароль
+                <input id="confirmPassword" formControlName="confirmPassword" placeholder="Повторите пароль" type="email">
+            </label>
+            <label class="input-label" for="email">
+                Имя
+                <input id="name" placeholder="Имя"  type="text" formControlName="name">
+            </label>
+        </div>
+
+        <div class="register-form">
+            <label class="input-label" for="email">
+                Фамилия 
+                <input id="surname" placeholder="Фамилия" type="text" formControlName="surname">
+            </label>
+            <label class="input-label" for="phoneNumber">
+                Ваш телефон
+                <input id="phoneNumber" placeholder="Ваш телефон" formControlName="phoneNumber" type="text">
+            </label>
+        </div>
+        
+        <div class="register-btn">
+            <button type="submit" class="form-btn">Зарегистрироваться</button>
+        </div>
+    </form>
+
+    <div class="form-social">
+        <p class="social-title">Вход в один клик:</p>
+        <div class="social-icons">
+            <button (click)="facebookLogin()">
+                <img src="../../../assets/images/facebook.svg" alt="">
+            </button>
+            <button (click)="googleLogin()">
+                <img src="../../../assets/images/google.svg" alt="">
+            </button>
+        </div>
+    </div>
+</div>

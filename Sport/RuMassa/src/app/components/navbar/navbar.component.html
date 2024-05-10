@@ -1,0 +1,140 @@
+<header>
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a routerLink="/home"><img src="assets/images/Logo.svg" alt="Logo" /></a>
+    </div>
+    <div class="nav-tex">
+      <div class="nav-text">Интернет-магазин RU-MASSA</div>
+    </div>
+    <img
+      src="assets/images/Line.svg"
+      alt=""
+      class="line1"
+      style="margin-left: 52px"
+    />
+    <div class="nav-search">
+      <input type="text" placeholder="Поиск" class="search-input" />
+      <img src="assets/images/Loupe.svg" alt="" class="loupe" />
+    </div>
+    <img
+      src="assets/images/Line.svg"
+      alt=""
+      class="line1"
+      style="margin-left: 28px"
+    />
+
+    <div class="logos">
+      <a href="https://mail.google.com/mail/u/0/#inbox"
+        ><img
+          src="assets/images/EmailIcon2.svg"
+          alt=""
+          style="border: 1px solid #dfdfdf; padding: 11px; margin-left: 10px"
+      /></a>
+      <a href="https://t.me/muhammadabdulloh_uz"
+        ><img src="assets/images/TelegramIcon.svg" alt=""
+      /></a>
+      @if(checker == true) {
+
+        <a (click)="logout()"><img
+          src="assets/images/logout.webp"
+          alt=""
+          style="
+          border: 1px solid #dfdfdf; padding: 11px;
+            width: 50px;
+          "
+        /></a>
+      }
+    </div>
+  </nav>
+  <hr
+    style="background-color: #dfdfdf; height: 1px; border: none; opacity: 0.5"
+  />
+  <div class="banner">
+    <div class="banner-content">
+      <ul class="links">
+        <img src="assets/images/BackCatalog.svg" alt="" style="height: 50px" />
+        <img
+          src="assets/images/Catalog.svg"
+          alt=""
+          style="margin-left: -146px"
+        />
+        <li><div class="catalog-t">Каталог</div></li>
+        <li>
+          <a routerLink="/kartochka">{{ categories[0].name }}</a>
+        </li>
+        <li>
+          <a href="#">{{ categories[1].name }}</a>
+        </li>
+        <li>
+          <a href="#">{{ categories[2].name }}</a>
+        </li>
+        <li>
+          <a href="#">{{ categories[3].name }}</a>
+        </li>
+        <li>
+          <a href="#">{{ categories[4].name }}</a>
+        </li>
+        <a routerLink="/userprofile"
+          ><img
+            src="assets/images/Profile.svg"
+            alt=""
+            style="border: 1px solid #dfdfdf; padding: 12px; margin-left: 70px"
+        /></a>
+        <img
+          src="assets/images/Graph.svg"
+          alt=""
+          style="
+            border: 1px solid #dfdfdf;
+            cursor: pointer;
+            padding: 10px;
+            margin-left: -15px;
+          "
+        />
+        <img
+          src="assets/images/Like.svg"
+          alt=""
+          style="
+            border: 1px solid #dfdfdf;
+            cursor: pointer;
+            padding: 11px;
+            margin-left: -15px;
+          "
+        />
+        <img
+          src="assets/images/Count.svg"
+          alt=""
+          style="
+            margin-left: -74.6px;
+            cursor: pointer;
+            margin-top: -32px;
+            cursor: pointer;
+            height: 12px;
+          "
+        />
+        <img
+          src="assets/images/Cart.svg"
+          alt=""
+          style="
+            border: 1px solid #dfdfdf;
+            cursor: pointer;
+            padding: 11px;
+            margin-left: 32px;
+          "
+        />
+        <img
+          src="assets/images/Count.svg"
+          alt=""
+          style="
+            margin-left: -74.5px;
+            cursor: pointer;
+            margin-top: -32px;
+            height: 12px;
+          "
+        />
+      </ul>
+    </div>
+  </div>
+  <hr
+    style="background-color: #dfdfdf; height: 1px; border: none; opacity: 0.5"
+  />
+</header>

@@ -1,0 +1,153 @@
+<div class="container_kartochka">
+    <div class="three_btns">
+        <img src="../../../../assets/images/arrow_back.svg" alt="">
+        <img src="../../../../assets/images/menu.svg" alt="">
+        <img src="../../../../assets/images/arrow_back.svg" alt="" class="rotate">
+    </div>
+    <div class="center">
+        <div class="medecine">
+            <div class="img_dori">
+                <div class="img_medecine">
+                    <div class="btns_item">
+                        <div class="blue_button">
+                            <img src="../../../../assets/images/tick.svg" alt="">
+                            <p>В наличии</p>
+                        </div>
+                        <div class="global_btn">
+                            <img src="../../../../assets/images/hearth.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="btns_item2">
+                        <div class="blue_buttton">
+                            
+                        </div>
+                        <div class="global_btn">
+                            <img src="../../../../assets/images/buildings.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                slider
+            </div>
+            <div class="message_btn">
+                <img src="../../../../assets/images/message.svg" alt="">
+                <p>Как оформить заказ</p>
+            </div>
+            
+
+        </div>
+        <div class="items">
+            <h1>Stanozolol 10mg/tab, 100tab</h1>
+            <hr>
+            <div class="about_medecine">
+                <p class="price">880 ₽</p>
+                <div class="count_card">
+                    <div class="plus_btn" style="cursor: pointer;" (click)="minus()">-</div>
+                    <div class="count">{{value}}</div>
+                    <div class="plus_btn" style="cursor: pointer;" (click)="plus()">+</div>
+                </div>
+                <div class="basket_btn">
+                    В корзину
+                </div>
+                <div class="global_btn">
+                    <img src="../../../../assets/images/hearth.svg" alt="">
+                </div>
+                <div class="global_btn">
+                    <img src="../../../../assets/images/buildings.svg" alt="">
+                </div>
+
+            </div>
+            <hr>
+            <h2>Категории:</h2>
+            <p>ERGO, Оральные препараты, Станозолол</p>
+            <hr>
+            <h2>Отзывы (0):</h2>
+            <p>Отзывов пока нет.</p>
+            <hr>
+            <div class="qwerty">
+                <h3>Будьте первым, кто оставил отзыв на “Stanozolol 10mg/tab, 100tab”</h3>
+                <p>Для отправки отзыва вам необходимо <span>авторизоваться</span>.</p>
+            </div>
+            <hr>
+            <h3>Поделиться :</h3>
+            <div class="platfroms">
+                <img src="../../../../assets/images/ffacebook.svg" alt="">
+                <img src="../../../../assets/images/twitter.svg" alt="">
+                <img src="../../../../assets/images/pinterest.svg" alt="">
+                <img src="../../../../assets/images/linkedin.svg" alt="">
+                <img src="../../../../assets/images/telegramm.svg" alt="">
+            </div>
+            <div class="nurse_with_medecine">
+                <div class="call_center_btn">
+                    Консультация с фармакологом
+                </div>
+            </div>
+        </div>
+
+        <div class="description" >
+            <div class="dostavka" style="padding: 20px;">
+                <h1>Доставка</h1>
+                <p style="margin-top: 10px;">Заказы отправляем почтой России:</p>
+                <hr style="margin-top: 10px;">
+                <p style="margin-top: 10px;">Посылка 5-14 дней с момента отправки в зависимости от региона, обычно не более 10, цена сейчас 650р (на заказы меньше 1500 рублей идет надбавка за доставку в размере 200р.)</p>
+                <hr style="margin-top: 10px;">
+                <p style="margin-top: 10px;">ЕМС ускоренная (можно до двери), сроки 2-7 дней с момента отправки, цена 1500р</p>
+                <hr style="margin-top: 10px;">
+                <p style="margin-top: 10px;">Отправка заказ происходит в течении 1-9 дней с момента оплаты.</p>
+                <div class={{c1}}>
+                    <div class="bb">
+                        <h2>Доставка только с территории России!</h2>
+                        <img style="cursor: pointer;" (click)="delete1()" src="../../../../assets/images/exit.svg" alt="">
+                    </div>
+                </div>
+
+                <div class={{c2}}>
+                    <div class="qq">
+                        <h2>Внимание!</h2>
+                        <img style="cursor: pointer;" (click)="delete2()" src="../../../../assets/images/exit.svg" alt="">
+                    </div>
+                    <p>Обязательно снимайте видео распаковки посылки, для подстраховки!</p>
+                </div>
+            </div>
+
+            <div class="dostavka" style="padding: 20px; margin-top: 30px;">
+                <h1>Оплата</h1>
+                <p style="margin-top: 10px;">Отправляем заказ только после 100% оплаты заказа и доставки, при получении посылки ничего доплачивать не нужно. В целях безопасности
+                    не можем сделать наложенный платеж.</p>
+                <h2>Способы оплаты:
+                </h2>
+                <hr style="margin-top: 10px;">
+
+                <div style="display: flex; gap: 10px; flex-direction: column;">
+                    <span>
+                        <img src="../../../../assets/images/yandex_logo.svg" alt="">    
+                        <span style="margin-top: 30px; margin-left: 10px; ">Яндекс Деньги</span>
+                    </span>
+    
+                    <span>
+                        <img src="../../../../assets/images/cberbank.svg" alt="">    
+                        <span style="margin-top: 30px; margin-left: 10px; ">Карта Сбербанк</span>
+                    </span>
+    
+                    <span>
+    
+                        <img src="../../../../assets/images/garant.svg" alt="">    
+                        <span style="margin-top: 30px; margin-left: 10px; ">Гарант сервис (на ваш выбор)</span>
+                    </span>
+                    <hr style="margin-top: 10px;">
+                    <p style="margin-top: 10px;">Если не знаете как оплатить, пишите консультанту на email, telegram или чат на сайте, все расскажем. </p>
+                </div>
+
+                <div class={{c3}}>
+                    <div class="qq">
+                        <h2 style="font-size: 15px;">Оплачивайте только на те реквизиты, который придут с нашего email или чата на сайте</h2>
+                        <img style="cursor: pointer;" (click)="delete3()" src="../../../../assets/images/exit.svg" alt="">
+                    </div>
+                    <p>В telegram вы можете нарваться на мошенника! Мы не выдаем реквизиты через телеграм!</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

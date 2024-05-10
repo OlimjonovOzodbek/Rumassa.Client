@@ -1,0 +1,81 @@
+.full{
+    height: 940px;
+    background-color: #F8F8F8;
+    display: flex;
+}
+.twoCont{
+    display: flex;
+    margin-left: 240px;
+    margin-top: 100px;
+}
+h1{
+font-size: 65px;
+font-weight: 600;
+width: 886px;
+height: 298;
+line-height: 90px;
+color: #000000;
+margin-left: 50px;
+margin-top: 120px;
+
+}
+.bole{
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
+color: #474747;
+margin-left: 50px;
+
+}
+.double{
+height: 39px;
+width: 263px;
+}
+.num{
+font-size: 20px;
+font-weight: 700;
+line-height: 26px;
+text-align: left;
+color:#BB9B75;
+
+}
+.dC{
+font-size: 22px;
+font-weight: 700;
+line-height: 26px;
+text-align: left;
+color: #1C1C1C;
+margin-top: 10px;
+}
+.sC{
+font-size: 18px;
+font-weight: 400;
+line-height: 26px;
+text-align: left;
+color: #555555;
+margin-top: 14px;
+
+}
+.tel{
+    width: 139px;
+    height: 139px;
+    background-color: #039BE5;
+    border-radius: 100px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.tel p{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.5px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 35px;
+    margin-top: -20px;
+}
+.tel img{
+    margin-left: 20px;
+    margin-top: 60px;
+}
