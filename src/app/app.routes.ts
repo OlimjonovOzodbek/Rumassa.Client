@@ -42,6 +42,7 @@ export const routes: Routes = [
     {path:'kartochka', component:KartochkaComponent,canActivate: [authGuard, expireGuard]},
     {path:'userprofile', component:UserprofileComponent, canActivate: [authGuard, expireGuard]},
     {path:'novosti', component:NovostiComponent, canActivate: [authGuard, expireGuard]},
+    {path:'korzina', component:KorzinaComponent},
     {path:'**', component:NotFound404Component}
 
 ];
