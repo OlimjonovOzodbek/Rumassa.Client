@@ -4,7 +4,7 @@ import { ImageModule } from 'primeng/image';
 import { ToolbarModule } from 'primeng/toolbar';
 import { NavbarServiceService } from './navbar-service.service';
 import { categoryModel } from '../../interfaces/categoryModel';
-import { AuthService } from '../../services/auth.service';
+import { AuthsService } from '../../services/auths.service';
 
 
 @Component({
@@ -17,7 +17,7 @@ import { AuthService } from '../../services/auth.service';
 export class NavbarComponent implements OnInit {
 
   checker = false;
-  constructor(private navbarService: NavbarServiceService, private readonly authService: AuthService, private router: Router) { }
+  constructor(private navbarService: NavbarServiceService, private readonly authsService: AuthsService, private router: Router) { }
   ngOnInit(): void {
     this.getAll()
     this.check()
@@ -32,7 +32,7 @@ export class NavbarComponent implements OnInit {
     )
   }
   check() {
-    if (this.authService.isAuthorized() === true) {
+    if (this.authsService.isAuthorized() === true) {
       this.checker = true;
     }
     else {
@@ -41,7 +41,7 @@ export class NavbarComponent implements OnInit {
   }
   logout()
   {
-    this.authService.logOut();
+    this.authsService.logOut();
     this.router.navigateByUrl('/login', { skipLocationChange: true }).then(() => {
       this.router.navigate(['/login']);
       setTimeout(() => {

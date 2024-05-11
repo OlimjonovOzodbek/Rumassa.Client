@@ -32,12 +32,10 @@
     <div class="form-social">
         <p class="social-title">Вход в один клик:</p>
         <div class="social-icons">
-            <a href="">
+            <asl-google-signin-button type='icon' size='medium' (click)="signInWithGoogle()"></asl-google-signin-button>
+            <button (click)="signInWithFacebook()">
                 <img src="../../../assets/images/facebook.svg" alt="">
-            </a>
-            <a href="">
-                <img src="../../../assets/images/google.svg" alt="">
-            </a>
+            </button>
         </div>
     </div>
 </div>

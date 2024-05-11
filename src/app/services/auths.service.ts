@@ -2,22 +2,20 @@ import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment.development';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
-import { Observable, map } from 'rxjs';
+import { Observable, Subject, map } from 'rxjs';
 import { Register } from '../interfaces/register';
 import { Response } from '../interfaces/response';
 import { Login } from '../interfaces/login';
 import { TokenModel } from '../interfaces/token-model';
-import { authGuard } from '../guard/auth.guard';
 
 @Injectable({
   providedIn: 'root'
 })
-export class AuthService {
+export class AuthsService {
 
   apiUrl = environment.apiUrl;
   constructor(private http: HttpClient, private router: Router) { }
   tokenKey = "token"
-
 
   register(data: Register): Observable<Response> {
     return this.http.post<Response>(`${this.apiUrl}Auth/Register`, data).pipe(
@@ -64,11 +62,5 @@ export class AuthService {
     return true;
   }
 
-  loginWithGoogle(returnUrl: string) {
-    return this.http.post(`${this.apiUrl}Auth/ExternalLogin`, { provider: 'Google', returnUrl });
-  }
-
-  loginWithFacebook(returnUrl: string) {
-    return this.http.post(`${this.apiUrl}Auth/ExternalLogin`, { provider: 'Facebook', returnUrl });
-  }
+  
 }

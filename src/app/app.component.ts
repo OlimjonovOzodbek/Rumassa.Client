@@ -5,13 +5,13 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ObmeniComponent } from './components/pages/obmeni/obmeni.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { RegistrationComponent } from './components/registration/registration.component';
-
+import { SocialLoginModule } from '@abacritt/angularx-social-login';
 
 @Component({
   selector: 'app-root',
   standalone: true,
 
-  imports: [RouterOutlet, NavbarComponent, FooterComponent, ObmeniComponent, RegistrationComponent, DashboardComponent],
+  imports: [RouterOutlet, NavbarComponent, FooterComponent, ObmeniComponent, RegistrationComponent, DashboardComponent, SocialLoginModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

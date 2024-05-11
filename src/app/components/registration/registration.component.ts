@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
-import { AuthService } from '../../services/auth.service';
+import { AuthsService } from '../../services/auths.service';
 import { environment } from '../../../environments/environment.development';
 
 @Component({
@@ -15,7 +15,7 @@ export class RegistrationComponent {
   
   apiUrl = environment.apiUrl;
 
-  constructor(private router : Router,private fb: FormBuilder, private authService : AuthService){}
+  constructor(private router : Router,private fb: FormBuilder, private authsService : AuthsService){}
 
   form!: FormGroup;
   hide = true;
@@ -37,7 +37,7 @@ export class RegistrationComponent {
       return;
     }
 
-    this.authService.register(this.form.value).subscribe({
+    this.authsService.register(this.form.value).subscribe({
       next: (response) => {
         console.log(response);
         this.router.navigateByUrl('/login');
