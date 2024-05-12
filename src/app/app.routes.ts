@@ -21,10 +21,12 @@ import { authGuard, expireGuard } from './guard/auth.guard';
 import { UserprofileComponent } from './components/pages/userprofile/userprofile.component';
 import { KorzinaComponent } from './components/pages/korzina/korzina.component';
 import { NovostiComponent } from './components/pages/novosti/novosti.component';
+import { PreparadiComponent } from './components/pages/preparadi/preparadi.component';
 
 export const routes: Routes = [
     {path:'', redirectTo: '/home', pathMatch: 'full'},
     {path:'home', component:HomeComponent,canActivate: [authGuard, expireGuard]},
+    {path:'preporadi', component:PreparadiComponent,canActivate: [authGuard, expireGuard]},
     {path:'oplata', component:OplataComponent, canActivate: [authGuard, expireGuard]},
     {path:'obmeni', component:ObmeniComponent, canActivate: [authGuard, expireGuard]},
     {path:'skidki', component:SkidkiComponent, canActivate: [authGuard, expireGuard]},

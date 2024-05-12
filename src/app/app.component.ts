@@ -12,7 +12,7 @@ import { PreparadiComponent } from './components/pages/preparadi/preparadi.compo
   selector: 'app-root',
   standalone: true,
 
-  imports: [RouterOutlet, NavbarComponent, FooterComponent, ObmeniComponent, RegistrationComponent, DashboardComponent, SocialLoginModule,PreparadiComponent],
+  imports: [RouterOutlet, NavbarComponent, FooterComponent, ObmeniComponent, RegistrationComponent, DashboardComponent, SocialLoginModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
