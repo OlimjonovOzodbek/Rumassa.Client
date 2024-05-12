@@ -6,12 +6,13 @@ import { ObmeniComponent } from './components/pages/obmeni/obmeni.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { SocialLoginModule } from '@abacritt/angularx-social-login';
+import { PreparadiComponent } from './components/pages/preparadi/preparadi.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
 
-  imports: [RouterOutlet, NavbarComponent, FooterComponent, ObmeniComponent, RegistrationComponent, DashboardComponent, SocialLoginModule],
+  imports: [RouterOutlet, NavbarComponent, FooterComponent, ObmeniComponent, RegistrationComponent, DashboardComponent, SocialLoginModule,PreparadiComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

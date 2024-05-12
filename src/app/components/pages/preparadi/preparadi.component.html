@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Оральные препараты</h1>
+
+  <div class="search-body">
+    <div class="search__container">
+      <input
+        class="search__input"
+        type="text"
+        placeholder="Поиск по каталогу"
+      />
+    </div>
+  </div>
+  @for(data of datas;track data.id){
+  <app-md-cards
+    [title]="data.name"
+    [catalog]="data.category.name"
+    [price]="data.price"
+    [company]="data.name"
+    [soni]="data.price"
+  />
+  }
+</div>
