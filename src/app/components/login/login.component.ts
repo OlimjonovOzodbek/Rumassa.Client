@@ -1,11 +1,11 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 import { environment } from '../../../environments/environment.development';
 import { AuthsService } from '../../services/auths.service';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { jwtDecode } from 'jwt-decode';
-import { FacebookLoginProvider, GoogleLoginProvider, GoogleSigninButtonModule, SocialAuthService, SocialLoginModule, SocialUser } from '@abacritt/angularx-social-login';
+import { FacebookLoginProvider, GoogleLoginProvider, GoogleSigninButtonModule, SocialAuthService, SocialUser } from '@abacritt/angularx-social-login';
 
 @Component({
   selector: 'app-login',
@@ -14,8 +14,8 @@ import { FacebookLoginProvider, GoogleLoginProvider, GoogleSigninButtonModule, S
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
-export class LoginComponent {
-  constructor(private router : Router,private authsService : AuthsService, private authService: SocialAuthService, private http: HttpClient){}
+export class LoginComponent implements OnInit {
+  constructor(private router : Router,private authsService : AuthsService, private socialAuthServiceConfig: SocialAuthService, private http: HttpClient){}
 
   tokenKey = "token"
   form!: FormGroup;
@@ -47,15 +47,19 @@ export class LoginComponent {
         });       
       }
 
-      signInWithGoogle(): void {
-        this.authService.signIn(GoogleLoginProvider.PROVIDER_ID).then((user: SocialUser) => {
-          this.sendTokenToAPI(user.provider, user.id, user.email, user.firstName, user.lastName, user.photoUrl);
-        });
+    signInWithGoogle(): void {
+        console.log("here!")
+        this.socialAuthServiceConfig.signIn(GoogleLoginProvider.PROVIDER_ID)
+          .then((user: SocialUser) => {
+            this.sendTokenToAPI(user.provider, user.id, user.email, user.firstName, user.lastName, user.photoUrl);
+          })
+          .catch(error => {
+            console.error('Error signing in with Google', error);
+          });
     }
     
     signInWithFacebook(): void {
-      console.log("Done!")
-        this.authService.signIn(FacebookLoginProvider.PROVIDER_ID).then((user: SocialUser) => {
+        this.socialAuthServiceConfig.signIn(FacebookLoginProvider.PROVIDER_ID).then((user: SocialUser) => {
           this.sendTokenToAPI(user.provider, user.id, user.email, user.firstName, user.lastName, user.photoUrl);
         });
     }
@@ -84,10 +88,11 @@ export class LoginComponent {
 
       
       ngOnInit(): void {
-        console.log("salom")
         this.form = this.fb.group({
           email: ['', [Validators.required, Validators.email]],
           password: ['', Validators.required],
         });
+
+        (window as any).signInWithGoogle = this.signInWithGoogle.bind(this);
       }
 }

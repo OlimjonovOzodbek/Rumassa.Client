@@ -19,7 +19,7 @@ export class NavbarComponent implements OnInit {
   checker = false;
   constructor(private navbarService: NavbarServiceService, private readonly authsService: AuthsService, private router: Router) { }
   ngOnInit(): void {
-    this.getAll()
+    // this.getAll()
     this.check()
   }
   categories !: categoryModel[]
