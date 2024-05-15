@@ -46,17 +46,6 @@ export class LoginComponent implements OnInit {
           
         });       
       }
-
-    signInWithGoogle(): void {
-        console.log("here!")
-        this.socialAuthServiceConfig.signIn(GoogleLoginProvider.PROVIDER_ID)
-          .then((user: SocialUser) => {
-            this.sendTokenToAPI(user.provider, user.id, user.email, user.firstName, user.lastName, user.photoUrl);
-          })
-          .catch(error => {
-            console.error('Error signing in with Google', error);
-          });
-    }
     
     signInWithFacebook(): void {
         this.socialAuthServiceConfig.signIn(FacebookLoginProvider.PROVIDER_ID).then((user: SocialUser) => {
@@ -93,6 +82,9 @@ export class LoginComponent implements OnInit {
           password: ['', Validators.required],
         });
 
-        (window as any).signInWithGoogle = this.signInWithGoogle.bind(this);
+        this.socialAuthServiceConfig.authState.subscribe((user) => {
+          console.log("Worked!");
+          this.sendTokenToAPI(user.provider, user.id, user.email, user.firstName, user.lastName, user.photoUrl);
+        });
       }
 }

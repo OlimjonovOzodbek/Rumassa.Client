@@ -32,19 +32,14 @@
     <div class="form-social">
         <p class="social-title">Вход в один клик:</p>
         <div class="social-icons">
-            <script src="https://accounts.google.com/gsi/client" async></script>
-            <div id="g_id_onload"
-                data-client_id="184933981069-ip8r3v84lkku8712umpipn0nhk0p3nm8.apps.googleusercontent.com"
-                data-callback="signInWithGoogle">
-            </div>
-            <div class="g_id_signin"
-                data-type="standard"
-                data-size="large"
-                data-theme="filled_black"
-                data-text="sign_in_with"
-                data-shape="circle"
-                data-logo_alignment="left">
-            </div>
+            <asl-google-signin-button
+                type="standard"
+                size="large"
+                theme="filled_black"
+                text="signin_with"
+                shape="rectangular"
+                logo_alignment="left">
+            </asl-google-signin-button>
 
             <button (click)="signInWithFacebook()">
                 <img src="assets/images/facebook.svg" alt="">
