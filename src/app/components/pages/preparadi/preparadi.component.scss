@@ -7,6 +7,9 @@
     background-color: #ffff;
     font-family: 'Raleway', sans-serif;
 }
+.dodir{
+    display: flex;
+}
 
 .search {
     &__container {
@@ -58,5 +61,13 @@
             border-radius: 0;
             background-position: 100% center;
         }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .dodir {
+        // display: block;
+        flex-direction: column;
+        width: 100%;
     }
 }
