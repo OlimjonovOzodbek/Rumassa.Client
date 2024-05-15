@@ -32,9 +32,17 @@
     <div class="form-social">
         <p class="social-title">Вход в один клик:</p>
         <div class="social-icons">
-            <asl-google-signin-button type='icon' size='medium' (click)="signInWithGoogle()"></asl-google-signin-button>
+            <asl-google-signin-button
+                type="standard"
+                size="large"
+                theme="filled_black"
+                text="signin_with"
+                shape="rectangular"
+                logo_alignment="left">
+            </asl-google-signin-button>
+
             <button (click)="signInWithFacebook()">
-                <img src="../../../assets/images/facebook.svg" alt="">
+                <img src="assets/images/facebook.svg" alt="">
             </button>
         </div>
     </div>

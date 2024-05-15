@@ -15,14 +15,18 @@ export const appConfig: ApplicationConfig = {
         providers: [
           {
             id: GoogleLoginProvider.PROVIDER_ID,
-            provider: new GoogleLoginProvider('184933981069-ip8r3v84lkku8712umpipn0nhk0p3nm8.apps.googleusercontent.com')
+            provider: new GoogleLoginProvider("184933981069-ip8r3v84lkku8712umpipn0nhk0p3nm8.apps.googleusercontent.com")
           },
           {
             id: FacebookLoginProvider.PROVIDER_ID,
-            provider: new FacebookLoginProvider('1419142218734083')
+            provider: new FacebookLoginProvider("1419142218734083")
           }
-        ]
-      } as SocialAuthServiceConfig
-    }
+        ],
+        onError: (err) => {
+          debugger;
+          console.error(err);
+        },
+      } as SocialAuthServiceConfig,
+    },
   ]
 };
