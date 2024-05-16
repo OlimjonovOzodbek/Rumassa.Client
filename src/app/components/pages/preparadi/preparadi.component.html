@@ -12,15 +12,15 @@
   </div>
   <div class="dodir">
     @for(data of datas;track data.id){
-
     <app-md-cards
-      [id] = "data.id"
-      [title]="data.name"
-      [catalog]="data.category.name"
-      [price]="data.price"
-      [company]="data.name"
-      [soni]="data.price"
-    />
-    }
-  </div>
+       [id]="data.id"
+       [title]="data.name"
+       [catalog]="data.category.name"
+       [price]="data.price"
+       [company]="data.name"
+       [soni]="data.price"
+       [photopath]="'https://localhost:7245' + data.photoPaths[0]"
+       />
+      }
+      </div>
 </div>

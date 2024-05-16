@@ -18,6 +18,7 @@ export class MdCardsComponent {
   @Input() catalog:string= "Default"
   @Input() company:string= "Default"
   @Input() price:number= 0
+  @Input() photopath:string=""
   constructor(private http: HttpClient,private router : Router){ }
 
   addToList(productId: string) {

@@ -18,7 +18,8 @@ export class PreparadiComponent implements OnInit{
   }
   getAll(){
     this.http.get<ProductModel[]>("https://localhost:7245/api/Products/GetAll?pageIndex=1&size=10").subscribe((data)=>{
-      this.datas = data;
+      
+    this.datas = data;
     });
   }
 }
