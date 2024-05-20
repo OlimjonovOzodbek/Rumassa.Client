@@ -11,12 +11,13 @@ export class KorzinaComponent {
   value:number=1
   cost:number=880
   withvalue:number=880
+  full:number=1440
   plus(){
    this.value++
    this.withvalue=this.value*this.cost
   }
   minus(){
-   if(this.value!=0){
+   if(this.value!=1){
       this.value--
       this.withvalue=this.value*this.cost
 
