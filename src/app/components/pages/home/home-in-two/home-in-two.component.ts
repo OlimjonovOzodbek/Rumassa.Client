@@ -1,3 +1,5 @@
+import { HttpBackend, HttpClient } from '@angular/common/http';
+import { Diplom } from './../../../../interfaces/Diplom';
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 
 @Component({
@@ -7,6 +9,11 @@ import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
   standalone:true
 })
 export class HomeInTwoComponent {
+
+  constructor(private http:HttpClient) {}
+  
+  diploms!: Diplom[];
+
   currentPage: number = 1;
   pagePosition: string = "0%";
   cardsPerPage: number = 0;
@@ -29,6 +36,7 @@ export class HomeInTwoComponent {
   }
 
   ngOnInit() {
+    this.getAllDiploms()
     this.cardsPerPage = this.getCardsPerPage();
     this.initializeSlider();
   }
@@ -42,6 +50,17 @@ export class HomeInTwoComponent {
 
   getCardsPerPage() {
     return Math.floor(this.container.nativeElement.offsetWidth / 200);
+  }
+
+
+  getAllDiploms(): void {
+    this.http.get<Diplom[]>(`https://localhost:7245/api/Diplom/GetAll?pageIndex=1&size=10`)
+      .subscribe(
+        (data) => {
+          this.diploms = data;
+          console.log(data);
+        }
+      );
   }
 
   changePage(incrementor: number) {
