@@ -1,0 +1,115 @@
+.one {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.text h1{
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+}
+.text-in {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin-bottom: 20px;
+}
+.text-in h1 {
+    width: 60%;
+}
+.text-in p {
+    border-left: 1px solid white;
+    padding-left: 20px;
+    width: 35.6%;
+    color: #fff;
+}
+@media screen and (max-width: 600px) {
+    .text h1{
+        font-size: 40px;
+    }
+    .text-in p {
+        width: 70%;
+    }
+}
+    @media screen and (max-width: 1240px) {
+        .text-in {
+            display: block;
+            width: 100%;
+        }
+        .text-in h1 {
+            width: 100%;
+        }
+        .text-in p {
+            border: none;
+            width: 80%;
+            padding-left: 0;
+        }
+    }
+.inp {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.inp input {
+    padding: 10px;
+    width: 70%;
+}
+.inp button {
+    border: 1px solid #fff;
+    color: #fff;
+    width: 25%;
+}
+@media screen and (max-width: 1000px) {
+    .inp {
+        display: block;
+        width: 100%;
+    }
+    .inp input {
+        width: 60%;
+        display: block;
+    }
+    .inp button {
+        width: 150px;
+        margin-top: 20px;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 830px) {
+    .inp input {
+        width: 80%;
+    }
+}
+.vid {
+    position: relative;
+}
+img {
+    position: absolute;
+    right: -100px;
+    bottom: 0;
+    width: 45%;
+    z-index: 2;
+}
+@media screen and (max-width: 1300px) {
+    .div-in {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .text-in {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .text-in p {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .inp {
+        margin: 0 auto;
+    }
+    .inp input {
+        margin: 0 auto;
+    }
+    img {
+        display: none;
+    }
+}
