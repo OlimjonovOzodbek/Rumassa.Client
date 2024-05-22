@@ -22,7 +22,8 @@ import { UserprofileComponent } from './components/pages/userprofile/userprofile
 import { KorzinaComponent } from './components/pages/korzina/korzina.component';
 import { NovostiComponent } from './components/pages/novosti/novosti.component';
 import { PreparadiComponent } from './components/pages/preparadi/preparadi.component';
-
+import { ProductModel } from './interfaces/productmodel';
+import { OPOneComponent } from './components/pages/o-p/o-p-one/o-p-one/o-p-one.component';
 export const routes: Routes = [
     {path:'', redirectTo: '/home', pathMatch: 'full'},
     {path:'home', component:HomeComponent,canActivate: [authGuard, expireGuard]},
@@ -45,6 +46,7 @@ export const routes: Routes = [
     {path:'userprofile', component:UserprofileComponent, canActivate: [authGuard, expireGuard]},
     {path:'novosti', component:NovostiComponent, canActivate: [authGuard, expireGuard]},
     {path:'korzina', component:KorzinaComponent},
+    {path:'products', component:OPOneComponent},
     {path:'**', component:NotFound404Component}
 
 ];
