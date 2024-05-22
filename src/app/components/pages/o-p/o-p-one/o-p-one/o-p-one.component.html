@@ -4,238 +4,29 @@
             <p style="margin-top: 10px;margin-bottom: 30px;"><span><a href="#">Главная</a></span> > оральные препараты</p>
             <h1 style="font-weight: 600;margin-top: 20px;" class="h">оральные препараты</h1>
             <div class="boxes">
-                <div class="card">
-                    <div class="img">
-                        <img src="assets/images/home-in-four/Mask group (1).png" alt="">
-                        <div class="icons">
-                            <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/>
-                              </svg>
-                              <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15v4m6-6v6m6-4v4m6-6v6M3 11l6-5 6 5 5.5-5.5"/>
-                              </svg>                                    
+                @for (item of datas; track item.id) 
+                {
+                    <div class="card">
+                        <div class="img">
+                            <img [src]="'https://localhost:7245'+item.photoPaths[0]" alt="ram">
+                            <div class="icons">
+                                <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/>
+                                  </svg>
+                                  <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15v4m6-6v6m6-4v4m6-6v6M3 11l6-5 6 5 5.5-5.5"/>
+                                  </svg>                                    
+                            </div>
+                        </div>
+                        <h1 style="font-weight: 600;font-size: 18px;margin-top: 10px;padding-left: 10px;text-align: start;width: 100%;">{{item.name}}</h1>
+                        <p style="padding-left: 10px;font-size: 13px;text-align: start;width: 100%;">{{item.category.name}}</p>
+                        <h1 style="font-weight: 600;font-size: 18px;text-align: start;width: 100%;padding-left: 10px;">{{item.price}}</h1>
+                        <div class="button" style="width: 100%;text-align: center;">
+                            <button style="width: 85%;padding: 12px; background-color: #BB9B75;color: #fff;margin-top: 10px;">В корзину</button>
+                            <button style="width: 85%;padding: 12px;border: 1px solid #BB9B75;margin-top: 10px;">Подробнее</button>
                         </div>
                     </div>
-                    <h1 style="font-weight: 600;font-size: 18px;margin-top: 10px;padding-left: 10px;text-align: start;width: 100%;">Metha 10, 10mg/caps, 100caps</h1>
-                    <p style="padding-left: 10px;font-size: 13px;text-align: start;width: 100%;">Оральные препараты, Метандиенон, Chang Pharmaceuticals</p>
-                    <h1 style="font-weight: 600;font-size: 18px;text-align: start;width: 100%;padding-left: 10px;">880 ₽</h1>
-                    <div class="button" style="width: 100%;text-align: center;">
-                        <button style="width: 85%;padding: 12px; background-color: #BB9B75;color: #fff;margin-top: 10px;">В корзину</button>
-                        <button style="width: 85%;padding: 12px;border: 1px solid #BB9B75;margin-top: 10px;">Подробнее</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-                        <img src="assets/images/home-in-four/Mask group (1).png" alt="">
-                        <div class="icons">
-                            <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/>
-                              </svg>
-                              <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15v4m6-6v6m6-4v4m6-6v6M3 11l6-5 6 5 5.5-5.5"/>
-                              </svg>                                    
-                        </div>
-                    </div>
-                    <h1 style="font-weight: 600;font-size: 18px;margin-top: 10px;padding-left: 10px;text-align: start;width: 100%;">Metha 10, 10mg/caps, 100caps</h1>
-                    <p style="padding-left: 10px;font-size: 13px;text-align: start;width: 100%;">Оральные препараты, Метандиенон, Chang Pharmaceuticals</p>
-                    <h1 style="font-weight: 600;font-size: 18px;text-align: start;width: 100%;padding-left: 10px;">880 ₽</h1>
-                    <div class="button" style="width: 100%;text-align: center;">
-                        <button style="width: 85%;padding: 12px; background-color: #BB9B75;color: #fff;margin-top: 10px;">В корзину</button>
-                        <button style="width: 85%;padding: 12px;border: 1px solid #BB9B75;margin-top: 10px;">Подробнее</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-                        <img src="assets/images/home-in-four/Mask group (1).png" alt="">
-                        <div class="icons">
-                            <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/>
-                              </svg>
-                              <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15v4m6-6v6m6-4v4m6-6v6M3 11l6-5 6 5 5.5-5.5"/>
-                              </svg>                                    
-                        </div>
-                    </div>
-                    <h1 style="font-weight: 600;font-size: 18px;margin-top: 10px;padding-left: 10px;text-align: start;width: 100%;">Metha 10, 10mg/caps, 100caps</h1>
-                    <p style="padding-left: 10px;font-size: 13px;text-align: start;width: 100%;">Оральные препараты, Метандиенон, Chang Pharmaceuticals</p>
-                    <h1 style="font-weight: 600;font-size: 18px;text-align: start;width: 100%;padding-left: 10px;">880 ₽</h1>
-                    <div class="button" style="width: 100%;text-align: center;">
-                        <button style="width: 85%;padding: 12px; background-color: #BB9B75;color: #fff;margin-top: 10px;">В корзину</button>
-                        <button style="width: 85%;padding: 12px;border: 1px solid #BB9B75;margin-top: 10px;">Подробнее</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-                        <img src="assets/images/home-in-four/Mask group (1).png" alt="">
-                        <div class="icons">
-                            <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/>
-                              </svg>
-                              <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15v4m6-6v6m6-4v4m6-6v6M3 11l6-5 6 5 5.5-5.5"/>
-                              </svg>                                    
-                        </div>
-                    </div>
-                    <h1 style="font-weight: 600;font-size: 18px;margin-top: 10px;padding-left: 10px;text-align: start;width: 100%;">Metha 10, 10mg/caps, 100caps</h1>
-                    <p style="padding-left: 10px;font-size: 13px;text-align: start;width: 100%;">Оральные препараты, Метандиенон, Chang Pharmaceuticals</p>
-                    <h1 style="font-weight: 600;font-size: 18px;text-align: start;width: 100%;padding-left: 10px;">880 ₽</h1>
-                    <div class="button" style="width: 100%;text-align: center;">
-                        <button style="width: 85%;padding: 12px; background-color: #BB9B75;color: #fff;margin-top: 10px;">В корзину</button>
-                        <button style="width: 85%;padding: 12px;border: 1px solid #BB9B75;margin-top: 10px;">Подробнее</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-                        <img src="assets/images/home-in-four/Mask group (1).png" alt="">
-                        <div class="icons">
-                            <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/>
-                              </svg>
-                              <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15v4m6-6v6m6-4v4m6-6v6M3 11l6-5 6 5 5.5-5.5"/>
-                              </svg>                                    
-                        </div>
-                    </div>
-                    <h1 style="font-weight: 600;font-size: 18px;margin-top: 10px;padding-left: 10px;text-align: start;width: 100%;">Metha 10, 10mg/caps, 100caps</h1>
-                    <p style="padding-left: 10px;font-size: 13px;text-align: start;width: 100%;">Оральные препараты, Метандиенон, Chang Pharmaceuticals</p>
-                    <h1 style="font-weight: 600;font-size: 18px;text-align: start;width: 100%;padding-left: 10px;">880 ₽</h1>
-                    <div class="button" style="width: 100%;text-align: center;">
-                        <button style="width: 85%;padding: 12px; background-color: #BB9B75;color: #fff;margin-top: 10px;">В корзину</button>
-                        <button style="width: 85%;padding: 12px;border: 1px solid #BB9B75;margin-top: 10px;">Подробнее</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-                        <img src="assets/images/home-in-four/Mask group (1).png" alt="">
-                        <div class="icons">
-                            <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/>
-                              </svg>
-                              <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15v4m6-6v6m6-4v4m6-6v6M3 11l6-5 6 5 5.5-5.5"/>
-                              </svg>                                    
-                        </div>
-                    </div>
-                    <h1 style="font-weight: 600;font-size: 18px;margin-top: 10px;padding-left: 10px;text-align: start;width: 100%;">Metha 10, 10mg/caps, 100caps</h1>
-                    <p style="padding-left: 10px;font-size: 13px;text-align: start;width: 100%;">Оральные препараты, Метандиенон, Chang Pharmaceuticals</p>
-                    <h1 style="font-weight: 600;font-size: 18px;text-align: start;width: 100%;padding-left: 10px;">880 ₽</h1>
-                    <div class="button" style="width: 100%;text-align: center;">
-                        <button style="width: 85%;padding: 12px; background-color: #BB9B75;color: #fff;margin-top: 10px;">В корзину</button>
-                        <button style="width: 85%;padding: 12px;border: 1px solid #BB9B75;margin-top: 10px;">Подробнее</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-                        <img src="assets/images/home-in-four/Mask group (1).png" alt="">
-                        <div class="icons">
-                            <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/>
-                              </svg>
-                              <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15v4m6-6v6m6-4v4m6-6v6M3 11l6-5 6 5 5.5-5.5"/>
-                              </svg>                                    
-                        </div>
-                    </div>
-                    <h1 style="font-weight: 600;font-size: 18px;margin-top: 10px;padding-left: 10px;text-align: start;width: 100%;">Metha 10, 10mg/caps, 100caps</h1>
-                    <p style="padding-left: 10px;font-size: 13px;text-align: start;width: 100%;">Оральные препараты, Метандиенон, Chang Pharmaceuticals</p>
-                    <h1 style="font-weight: 600;font-size: 18px;text-align: start;width: 100%;padding-left: 10px;">880 ₽</h1>
-                    <div class="button" style="width: 100%;text-align: center;">
-                        <button style="width: 85%;padding: 12px; background-color: #BB9B75;color: #fff;margin-top: 10px;">В корзину</button>
-                        <button style="width: 85%;padding: 12px;border: 1px solid #BB9B75;margin-top: 10px;">Подробнее</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-                        <img src="assets/images/home-in-four/Mask group (1).png" alt="">
-                        <div class="icons">
-                            <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/>
-                              </svg>
-                              <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15v4m6-6v6m6-4v4m6-6v6M3 11l6-5 6 5 5.5-5.5"/>
-                              </svg>                                    
-                        </div>
-                    </div>
-                    <h1 style="font-weight: 600;font-size: 18px;margin-top: 10px;padding-left: 10px;text-align: start;width: 100%;">Metha 10, 10mg/caps, 100caps</h1>
-                    <p style="padding-left: 10px;font-size: 13px;text-align: start;width: 100%;">Оральные препараты, Метандиенон, Chang Pharmaceuticals</p>
-                    <h1 style="font-weight: 600;font-size: 18px;text-align: start;width: 100%;padding-left: 10px;">880 ₽</h1>
-                    <div class="button" style="width: 100%;text-align: center;">
-                        <button style="width: 85%;padding: 12px; background-color: #BB9B75;color: #fff;margin-top: 10px;">В корзину</button>
-                        <button style="width: 85%;padding: 12px;border: 1px solid #BB9B75;margin-top: 10px;">Подробнее</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-                        <img src="assets/images/home-in-four/Mask group (1).png" alt="">
-                        <div class="icons">
-                            <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/>
-                              </svg>
-                              <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15v4m6-6v6m6-4v4m6-6v6M3 11l6-5 6 5 5.5-5.5"/>
-                              </svg>                                    
-                        </div>
-                    </div>
-                    <h1 style="font-weight: 600;font-size: 18px;margin-top: 10px;padding-left: 10px;text-align: start;width: 100%;">Metha 10, 10mg/caps, 100caps</h1>
-                    <p style="padding-left: 10px;font-size: 13px;text-align: start;width: 100%;">Оральные препараты, Метандиенон, Chang Pharmaceuticals</p>
-                    <h1 style="font-weight: 600;font-size: 18px;text-align: start;width: 100%;padding-left: 10px;">880 ₽</h1>
-                    <div class="button" style="width: 100%;text-align: center;">
-                        <button style="width: 85%;padding: 12px; background-color: #BB9B75;color: #fff;margin-top: 10px;">В корзину</button>
-                        <button style="width: 85%;padding: 12px;border: 1px solid #BB9B75;margin-top: 10px;">Подробнее</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-                        <img src="assets/images/home-in-four/Mask group (1).png" alt="">
-                        <div class="icons">
-                            <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/>
-                              </svg>
-                              <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15v4m6-6v6m6-4v4m6-6v6M3 11l6-5 6 5 5.5-5.5"/>
-                              </svg>                                    
-                        </div>
-                    </div>
-                    <h1 style="font-weight: 600;font-size: 18px;margin-top: 10px;padding-left: 10px;text-align: start;width: 100%;">Metha 10, 10mg/caps, 100caps</h1>
-                    <p style="padding-left: 10px;font-size: 13px;text-align: start;width: 100%;">Оральные препараты, Метандиенон, Chang Pharmaceuticals</p>
-                    <h1 style="font-weight: 600;font-size: 18px;text-align: start;width: 100%;padding-left: 10px;">880 ₽</h1>
-                    <div class="button" style="width: 100%;text-align: center;">
-                        <button style="width: 85%;padding: 12px; background-color: #BB9B75;color: #fff;margin-top: 10px;">В корзину</button>
-                        <button style="width: 85%;padding: 12px;border: 1px solid #BB9B75;margin-top: 10px;">Подробнее</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-                        <img src="assets/images/home-in-four/Mask group (1).png" alt="">
-                        <div class="icons">
-                            <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/>
-                              </svg>
-                              <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15v4m6-6v6m6-4v4m6-6v6M3 11l6-5 6 5 5.5-5.5"/>
-                              </svg>                                    
-                        </div>
-                    </div>
-                    <h1 style="font-weight: 600;font-size: 18px;margin-top: 10px;padding-left: 10px;text-align: start;width: 100%;">Metha 10, 10mg/caps, 100caps</h1>
-                    <p style="padding-left: 10px;font-size: 13px;text-align: start;width: 100%;">Оральные препараты, Метандиенон, Chang Pharmaceuticals</p>
-                    <h1 style="font-weight: 600;font-size: 18px;text-align: start;width: 100%;padding-left: 10px;">880 ₽</h1>
-                    <div class="button" style="width: 100%;text-align: center;">
-                        <button style="width: 85%;padding: 12px; background-color: #BB9B75;color: #fff;margin-top: 10px;">В корзину</button>
-                        <button style="width: 85%;padding: 12px;border: 1px solid #BB9B75;margin-top: 10px;">Подробнее</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-                        <img src="assets/images/home-in-four/Mask group (1).png" alt="">
-                        <div class="icons">
-                            <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/>
-                              </svg>
-                              <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15v4m6-6v6m6-4v4m6-6v6M3 11l6-5 6 5 5.5-5.5"/>
-                              </svg>                                    
-                        </div>
-                    </div>
+                }
                     <h1 style="font-weight: 600;font-size: 18px;margin-top: 10px;padding-left: 10px;text-align: start;width: 100%;">Metha 10, 10mg/caps, 100caps</h1>
                     <p style="padding-left: 10px;font-size: 13px;text-align: start;width: 100%;">Оральные препараты, Метандиенон, Chang Pharmaceuticals</p>
                     <h1 style="font-weight: 600;font-size: 18px;text-align: start;width: 100%;padding-left: 10px;">880 ₽</h1>
@@ -249,7 +40,6 @@
                 <button style="padding: 15px 30px 15px 30px;background-color: #BB9B75;color: #fff;box-shadow: 0px 10px 22px 0px #A8865E4D;">Открыть ещё</button>
             </div>
         </div>
-    </div>
     <div class="two" style="background-color: #F2F2F2;width: 80%;margin: 0 auto;padding-left: 30px;padding-right: 30px;margin-top: 70px;">
         <h1>Оральные стероиды: что это?</h1>
         <p>Анаболические стероиды уже давно стали неотъемлемой частью профессионального спорта. С помощью этих препаратов атлеты быстрее прогрессируют и способны показывать феноменальные результаты. С развитием интернета к числу потребителей ААС могут присоединиться и любители культуризма.</p>
