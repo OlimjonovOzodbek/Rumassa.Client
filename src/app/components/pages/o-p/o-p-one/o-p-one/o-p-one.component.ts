@@ -14,27 +14,21 @@ import { HttpClient } from '@angular/common/http';
 export class OPOneComponent {
   products!:ProductModel[]
   pageIndex:number=1
-  size:number=10
+  size:number=12
   
   datas!: ProductModel[];
   constructor(private productservice: ProductserviceService){}
   ngOnInit(): void {
     this.getAll(this.pageIndex, this.size);
   }
-  previousPage(): void {
-    if (this.pageIndex >= 12){
-      this.pageIndex -= 12;
-    }
-    this.getAll(this.pageIndex, this.size);
-  }
 
-  nextPage(): void {
-    this.pageIndex += 12;
+  More(): void {
+    this.size += 12;
     this.getAll(this.pageIndex, this.size);
   }
   getAll(pageIndex: number, size: number){
     this.productservice.getallProducts(pageIndex, size).subscribe((data)=>{
-      
+    console.log(data);
     this.datas = data;
     });
   }
