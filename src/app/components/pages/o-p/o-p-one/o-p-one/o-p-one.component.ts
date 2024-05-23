@@ -17,12 +17,23 @@ export class OPOneComponent {
   size:number=10
   
   datas!: ProductModel[];
-  constructor(private http : HttpClient){}
+  constructor(private productservice: ProductserviceService){}
   ngOnInit(): void {
-    this.getAll();
+    this.getAll(this.pageIndex, this.size);
   }
-  getAll(){
-    this.http.get<ProductModel[]>("https://localhost:7245/api/Products/GetAll?pageIndex=1&size=10").subscribe((data)=>{
+  previousPage(): void {
+    if (this.pageIndex >= 12){
+      this.pageIndex -= 12;
+    }
+    this.getAll(this.pageIndex, this.size);
+  }
+
+  nextPage(): void {
+    this.pageIndex += 12;
+    this.getAll(this.pageIndex, this.size);
+  }
+  getAll(pageIndex: number, size: number){
+    this.productservice.getallProducts(pageIndex, size).subscribe((data)=>{
       
     this.datas = data;
     });

@@ -11,7 +11,7 @@ export class ProductserviceService {
   apiUrl = environment.apiUrl
   constructor(private httpClient: HttpClient) { }
 
-  getallNews(pageIndex: number, size: number): Observable<ProductModel[]> {
+  getallProducts(pageIndex: number, size: number): Observable<ProductModel[]> {
     return this.httpClient.get<ProductModel[]>(this.apiUrl + `Products/GetAll?pageIndex=${pageIndex}&size=${size}`)
   }
 }
