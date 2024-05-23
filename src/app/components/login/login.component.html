@@ -1,49 +1,36 @@
-<div class="login-wrapper">
-    <div class="content-logo">
-        <img src="../../../assets/images/Logo.svg" alt="">
-        <h3>Интернет-магазин <br> RU-massa</h3>
-    </div>
-    <div class="enter-title">Вход</div>
-    <div class="form__check-title">
-        <p>Нет аккаунта?</p>
-        <a routerLink="/register">Зарегистрируйтесь</a>
-    </div>
-    <form [formGroup]="form" (ngSubmit)="login()">
-        <div class="register-form">
-            <label class="input-label" for="email">
-                Email
-                <input id="email" placeholder="Введите e-mail" formControlName="email" type="email">
-            </label>
-            <label class="input-label" for="email">
-                Пароль
-                <input id="password" placeholder="Введите ваш пароль" formControlName="password" type="password">
-            </label>
+<div class="div">
+    <div class="div-in">
+        <div class="box-1">
+            <img src="assets/images/Logo.svg" alt="img">
+                <div class="img-right">
+                    <p>Интернет-магазин</p>
+                    <p>RU-MASSA</p>
+                </div>
         </div>
-        
-        <div class="form__action-link">
-            <a href="/assa">Запомнить меня</a>
-            <a href="/sasa">Забыли пароль?</a>
-        </div>
-        <div class="register-btn">
-            <button type="submit" class="form-btn">Войти</button>
-        </div>
-    </form>
-
-    <div class="form-social">
-        <p class="social-title">Вход в один клик:</p>
-        <div class="social-icons">
-            <asl-google-signin-button
-                type="standard"
-                size="large"
-                theme="filled_black"
-                text="signin_with"
-                shape="rectangular"
-                logo_alignment="left">
-            </asl-google-signin-button>
-
-            <button (click)="signInWithFacebook()">
-                <img src="assets/images/facebook.svg" alt="">
-            </button>
-        </div>
+        <h1 style="font-size: 30px;margin-top: 30px;font-weight: 700;">Вход</h1>
+        <p style="color: #828282;margin-top: 5px;">Нет аккаунта?<span style="color: #E6E6E6;"> | </span><span><a routerLink="/register" style="color: #BB9B75;border-bottom: 1px solid #BB9B75;">Зарегистрируйтесь</a></span></p>
+        <form [formGroup]="form" (ngSubmit)="login()">
+            <div class="box-2">
+                <div class="l1">
+                    <label for="email">Ваша почта</label><br>
+                    <input type="text" name="email" id="email" formControlName="email" placeholder="Введите e-mail">
+                </div>
+                <div class="l2">
+                    <label for="password">Пароль</label><br>
+                    <input type="password" name="password" id="password" formControlName="password" placeholder="Введите ваш пароль">
+                </div>
+            </div>
+            <div class="box-3">
+                <a href="#" style="color: #6B6B6B;border-bottom: 1px solid #6B6B6B;">Запомнить меня</a>
+                <a href="#" style="color: #BB9B75;border-bottom: 1px solid #BB9B75;">Забыли пароль?</a>
+            </div>
+            <div class="box-4">
+                <button type="submit" style="background: linear-gradient(130.83deg, #CFAE87 9.11%, #A48159 70.56%);color: #fff;padding: 15px;padding-left: 50px;padding-right: 50px;">Войти</button>
+            </div>
+        </form>
+        <hr style="margin-top: 20px;">
+        <p style="margin-top: 10px;margin-bottom: 10px;">Вход в один клик:</p>
+        <asl-google-signin-button type="icon" size="large" theme="outline" text="signin_with" shape="rectangular" logo_alignment="left"></asl-google-signin-button>
+        <a (click)="signInWithFacebook()" class="facebook-btn"><img src="assets/images/facebook.svg" alt=""></a>
     </div>
 </div>

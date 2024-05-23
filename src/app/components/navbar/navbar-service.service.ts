@@ -14,6 +14,8 @@ export class NavbarServiceService {
   constructor(private http : HttpClient) { }
 
   getAllCategories() : Observable<categoryModel[]>
-{
-  return this.http.get<categoryModel[]>(`${this.api}/GetAll`)
-}}
+  {
+    return this.http.get<categoryModel[]>(`${this.api}/GetAll`)
+  }
+
+}
