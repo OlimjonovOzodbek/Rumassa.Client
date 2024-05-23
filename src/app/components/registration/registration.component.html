@@ -1,61 +1,56 @@
-<div class="register-wrapper">
-    <div class="content-logo">
-        <img src="../../../assets/images/Logo.svg" alt="">
-        <h3>Интернет-магазин <br> RU-massa</h3>
-    </div>
-    <div class="enter-title">Регистрация</div>
-    <div class="form__check-title">
-        <p>Уже есть аккаунт?</p>
-        <a routerLink="/login">Войдите</a>
-    </div>
-    <form [formGroup]="form" (ngSubmit)="register()">
-        <div class="register-form">
-            <label class="input-label" for="email">
-                Ваша почта
-                <input id="email" formControlName="email" placeholder="Введите e-mail" type="email">
-            </label>
-            <label class="input-label" for="password">
-                Пароль
-                <input id="password" formControlName="password" placeholder="Введите ваш пароль" type="password">
-            </label>
+<div class="div">
+    <div class="div-in">
+        <div class="box-1">
+            <img src="assets/images/Logo.svg" alt="img">
+                <div class="img-right">
+                    <p>Интернет-магазин</p>
+                    <p>RU-MASSA</p>
+                </div>
         </div>
-
-        <div class="register-form">
-            <label class="input-label" for="confirmPassword">
-                Повторите пароль
-                <input id="confirmPassword" formControlName="confirmPassword" placeholder="Повторите пароль" type="email">
-            </label>
-            <label class="input-label" for="email">
-                Имя
-                <input id="name" placeholder="Имя"  type="text" formControlName="name">
-            </label>
-        </div>
-
-        <div class="register-form">
-            <label class="input-label" for="email">
-                Фамилия 
-                <input id="surname" placeholder="Фамилия" type="text" formControlName="surname">
-            </label>
-            <label class="input-label" for="phoneNumber">
-                Ваш телефон
-                <input id="phoneNumber" placeholder="Ваш телефон" formControlName="phoneNumber" type="text">
-            </label>
-        </div>
-        
-        <div class="register-btn">
-            <button type="submit" class="form-btn">Зарегистрироваться</button>
-        </div>
-    </form>
-
-    <div class="form-social">
-        <p class="social-title">Вход в один клик:</p>
-        <div class="social-icons">
-            <button (click)="facebookLogin()">
-                <img src="../../../assets/images/facebook.svg" alt="">
-            </button>
-            <button (click)="googleLogin()">
-                <img src="../../../assets/images/google.svg" alt="">
-            </button>
-        </div>
+        <h1 style="font-size: 30px;margin-top: 30px;font-weight: 700;">Регистрация</h1>
+        <p style="color: #828282;margin-top: 5px;">Уже есть аккаунт?<span style="color: #E6E6E6;"> | </span><span><a routerLink="/login" style="color: #BB9B75;border-bottom: 1px solid #BB9B75;">Войдите</a></span></p>
+        <form [formGroup]="form" (ngSubmit)="register()">
+            <div class="box-2">
+                <div class="l1">
+                    <label for="mail">Ваша почта</label><br>
+                    <input type="text" formControlName="email" id="main" placeholder="Введите e-mail">
+                </div>
+                <div class="l2">
+                    <label for="pass">Пароль</label><br>
+                    <input type="password" formControlName="password" id="pass" placeholder="Введите ваш пароль">
+                </div>
+            </div>
+            <div class="box-2">
+                <div class="l1">
+                    <label for="ref-pass">Повторите пароль</label><br>
+                    <input type="password" formControlName="confirmPassword" id="ref-pass" placeholder="Повторите пароль">
+                </div>
+                <div class="l2">
+                    <label for="name">Имя</label><br>
+                    <input type="text" formControlName="name" id="name" placeholder="Имя">
+                </div>
+            </div>
+            <div class="box-2">
+                <div class="l1">
+                    <label for="sourname">Фамилия</label><br>
+                    <input type="text" formControlName="surname" id="sourname" placeholder="Фамилия">
+                </div>
+                <div class="l2">
+                    <label for="tel">Ваш телефон</label><br>
+                    <input type="text" formControlName="phoneNumber" id="tel" placeholder="Ваш телефон">
+                </div>
+            </div>
+            <div class="box-3">
+                <a href="#" style="color: #6B6B6B;">Запомнить меня</a>
+                <a href="#" style="color: #BB9B75;">Забыли пароль?</a>
+            </div>
+            <div class="box-4">
+                <button type="submit" style="background: linear-gradient(130.83deg, #CFAE87 9.11%, #A48159 70.56%);color: #fff;padding: 12px;padding-left: 28px;padding-right: 28px;">Зарегистрироваться</button>
+            </div>
+        </form>
+        <hr style="margin-top: 20px;">
+        <p style="margin-top: 10px;margin-bottom: 10px;">Вход в один клик:</p>
+        <asl-google-signin-button type="icon" size="large" theme="outline" text="signin_with" shape="rectangular" logo_alignment="left" style="display: inline-block; width: 5%;"></asl-google-signin-button>
+        <a (click)="signInWithFacebook()" class="facebook-btn"><img src="assets/images/facebook.svg" alt=""></a>
     </div>
 </div>

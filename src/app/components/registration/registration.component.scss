@@ -1,109 +1,85 @@
-.register-wrapper{
-    width: 100%;
-    max-width: 1100px;
-    margin: auto;
-    height: 800px;
-    background-color: #F8F8F8;
-    padding: 1.5rem 2rem;
+* {
+    margin: 0;
+    padding: 0;
+}
+.div {
+    background: #F8F8F8;
+    width: 60%;
+    margin: 0 auto;
+}
+.div-in {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.content-logo{
+.facebook-btn {
+    width: 41px;
+    height: 41px;
     display: flex;
     align-items: center;
-    column-gap: 10px;
-    img{
-        object-fit: cover;
-    }
-}
-.enter-title{
-    margin-top: 26px;
-    color: var(#000);
-    font-size: 40px;
-    text-transform: uppercase;
-    font-weight: 700;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 4px;
+    cursor: pointer;
 }
 
+.facebook-btn img {
+    width: 28px;
+    height: 28px;
+}
 
-.form__check-title{
+.box-1 {
     display: flex;
     align-items: center;
-    column-gap: 15px;
-    margin-top: 14px;
-    p{
-        font-size: 14px;
-        color: #828282;
-    }
-    a{
-        color: #BB9B75;
-        font-size: 14px;
-        text-decoration: underline;
-        margin-bottom: 15px;
-    }
+    margin-top: 10px;
 }
 
-
-.register-form{
-    margin-top: 30px;
+.box-2 {
     width: 100%;
-    display: flex;
-    column-gap: 20px;
-    .input-label{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        color: #6B6B6B;
-        font-size: 15px;
-        row-gap: 10px;
-        input{
-            width: 100%;
-            border: 1px solid #E1E1E1;
-            outline: none;
-            text-indent: 10px;
-            background-color: #fff;
-            height: 50px;
-        }
-    }
-}
-
-.form__action-link{
-    width: 100%;
-    margin-top: 13px;
     display: flex;
     justify-content: space-between;
-    a{
-        color: #BB9B75;
-        font-size: 14px;
-        text-decoration: underline;
-    }
 }
-.register-btn{
+.box-2 div {
+    margin-top: 25px;
+    width: 48.5%;
+}
+.box-2 div label {
+    color: #6B6B6B;
+}
+.box-2 div input {
+    padding: 10px;
     width: 100%;
+}
+.box-3 {
     display: flex;
-    justify-content: flex-end;
-    border-bottom: 1px solid #E7E7E7;
-    padding-bottom: 2rem;
+    justify-content: space-between;
+    margin-top: 20px;
 }
-.form-btn{
-    display: inline;
+.box-4 {
+    display: flex;
     width: 100%;
-    max-width: 208px;
-    padding: 13px 0px;
-    color: #fff;
-    font-size: 16px;
-    border: none;
+    justify-content: end;
     margin-top: 30px;
-    background: linear-gradient(130.83deg, #CFAE87 9.11%, #A48159 70.56%);
-
 }
-
-.form-social{
-    margin-top: 10px;
-    .social-title{
-        font-size: 14px;
+@media screen and (max-width: 52rem) {
+    .div {
+        width: 100%;
     }
-    .social-icons{
-        display: flex;
-        margin-top: 10px;
-        column-gap: 10px;
+    .box-1 {
+        width: 50%;
+    }
+    .box-2 {
+        display: block;
+    }
+    .box-2 div {
+        width: 100%;
+    }
+    .box-4 {
+        display: block;
     }
 }
