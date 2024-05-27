@@ -1,7 +1,12 @@
 # RuMassa
-![rumassa-register](https://github.com/RumassaProject/Rumassa.Client/assets/145344775/ce5e66b9-b3c6-49b0-8508-2df592722b5f)
-
 ![Home](https://github.com/RumassaProject/Rumassa.Client/assets/145344775/f1c62fd0-bf75-467b-b4e3-2674113691be)
+
+![Снимок экрана (84)](https://github.com/RumassaProject/Rumassa.Client/assets/145344775/c5b97b8d-6cc2-4d29-925d-9860b2632779)
+![Снимок экрана (85)](https://github.com/RumassaProject/Rumassa.Client/assets/145344775/4f28b81b-f819-4f06-873c-f30198431f5d)
+![Снимок экрана (86)](https://github.com/RumassaProject/Rumassa.Client/assets/145344775/8f481b3c-a411-4ee5-99fd-64cc0c07abdf)
+![Снимок экрана (87)](https://github.com/RumassaProject/Rumassa.Client/assets/145344775/973a8f51-b589-413b-a6b1-6ff851c26276)
+![Снимок экрана (89)](https://github.com/RumassaProject/Rumassa.Client/assets/145344775/d9976e80-476e-46b2-8a44-4e008a0f3e6f)
+
 
 ![product](https://github.com/RumassaProject/Rumassa.Client/assets/145344775/8164cab4-1072-4d1c-823b-41b365fbb203)
 
